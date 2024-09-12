@@ -16,7 +16,7 @@ class Laser:
     """Class for describing a laser and its properties."""
 
     name: str
-    laser_type: Optional[LaserType] = None
+    laser_type: Optional[Union[LaserType, str]] = field(default_factory=LaserType)
     pulse_duration: Optional[Union[Q_, str]] = field(default_factory=Q_)
     wavelength: Optional[Union[Q_, str]] = field(default_factory=Q_)
 
