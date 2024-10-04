@@ -8,7 +8,7 @@ authors = [
   { name="Sebastien J. Weber", email="sebastien.weber@cemes.fr" },
 ]
 
-dependencies = []
+dependencies = ['pymodaq_gui']
 description = "Optical laser damage and risk calculation"
 readme = "README.rst"
 license = { file="LICENSE" }
